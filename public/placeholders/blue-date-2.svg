@@ -1,0 +1,10 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#FBFDFF"/>
+  <rect x="82" y="82" width="736" height="1036" rx="42" fill="#F1F7FC"/>
+  <rect x="136" y="148" width="628" height="428" rx="32" fill="#DCECFB"/>
+  <rect x="194" y="216" width="514" height="292" rx="146" fill="#B4D4F3"/>
+  <path d="M298 767C298 714.533 340.533 672 393 672H516C568.467 672 611 714.533 611 767V892C611 944.467 568.467 987 516 987H393C340.533 987 298 944.467 298 892V767Z" fill="#E7F2FB"/>
+  <path d="M358 731H543C576.69 731 604 758.31 604 792C604 825.69 576.69 853 543 853H516" stroke="#2A7FD4" stroke-width="18"/>
+  <path d="M250 1030H650" stroke="#2A7FD4" stroke-width="12" stroke-linecap="round"/>
+  <text x="126" y="1100" fill="#2A7FD4" font-family="Inter, Arial, sans-serif" font-size="40" letter-spacing="0.3em">COFFEE SHOP</text>
+</svg>

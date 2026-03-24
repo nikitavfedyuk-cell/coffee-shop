@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Geist:wght@400;500;600;700&family=Inter:wght@600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-display: "Bricolage Grotesque", "Inter", sans-serif;
+  --font-body: "Geist", "Inter", sans-serif;
+  --font-ui-strong: "Inter", "Geist", sans-serif;
+  --page-bg: #f7f1e8;
+  --surface: rgba(255, 252, 247, 0.88);
+  --surface-strong: #fffaf4;
+  --ink: #132238;
+  --ink-soft: #5b6678;
+  --muted: #8f97a4;
+  --line: rgba(19, 34, 56, 0.08);
+  --line-strong: rgba(14, 165, 233, 0.22);
+  --accent: #0ea5e9;
+  --accent-strong: #0ea5e9;
+  --accent-soft: rgba(14, 165, 233, 0.12);
+  --accent-warm: #c58f61;
+  --accent-warm-soft: rgba(197, 143, 97, 0.14);
+  --shadow-soft: 0 14px 35px rgba(80, 57, 35, 0.08);
+  --shadow-card: 0 10px 28px rgba(84, 61, 38, 0.08);
+  --skeleton: rgba(154, 134, 111, 0.18);
+  color: var(--ink);
+  background: var(--page-bg);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.45;
+  overflow-x: hidden;
+  position: relative;
+  background:
+    radial-gradient(circle at top center, rgba(197, 143, 97, 0.08), transparent 36%),
+    linear-gradient(180deg, rgba(14, 165, 233, 0.04) 0%, rgba(255, 255, 255, 0) 24%),
+    var(--page-bg);
+}
+
+body::selection {
+  background: rgba(14, 165, 233, 0.2);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-ui-strong {
+  font-family: var(--font-ui-strong);
+}
+
+.cms-text {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .animate-fade-up,
+  .animate-fade-in {
+    animation-duration: 0.5s;
+  }
+}
