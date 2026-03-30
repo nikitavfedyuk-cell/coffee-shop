@@ -137,7 +137,7 @@ export function MenuSection({ categories }) {
   return (
     <section
       id="menu"
-      className="overflow-x-hidden rounded-[30px] bg-[linear-gradient(180deg,rgba(255,250,244,0.88),rgba(255,247,240,0.94))] px-4 py-5 shadow-[var(--shadow-soft)] sm:px-5 lg:rounded-[38px] lg:px-6 lg:py-6"
+      className="rounded-[30px] bg-[linear-gradient(180deg,rgba(255,250,244,0.88),rgba(255,247,240,0.94))] px-4 py-5 shadow-[var(--shadow-soft)] sm:px-5 lg:rounded-[38px] lg:px-6 lg:py-6"
     >
       <CategoryNav categories={categories} activeSlug={activeSlug} />
 
