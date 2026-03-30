@@ -85,17 +85,14 @@ function App() {
   const { site, menuByCategory } = state.data
 
   return (
-    <div
-      id="top"
-      className="min-h-screen overflow-x-hidden bg-[var(--page-bg)] text-[var(--ink)]"
-    >
+    <div id="top" className="min-h-screen bg-[var(--page-bg)] text-[var(--ink)]">
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute left-1/2 top-0 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,_rgba(197,143,97,0.12),_rgba(197,143,97,0)_70%)]" />
         <div className="absolute right-0 top-[24%] h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,_rgba(14,165,233,0.08),_rgba(14,165,233,0)_72%)]" />
         <div className="absolute left-[-8rem] top-[38%] h-[18rem] w-[18rem] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.42),_rgba(255,255,255,0)_72%)]" />
       </div>
 
-      <div className="mx-auto max-w-[1600px] overflow-x-hidden px-4 pb-28 pt-4 sm:px-6 lg:px-10 lg:pb-10">
+      <div className="mx-auto max-w-[1600px] px-4 pb-28 pt-4 sm:px-6 lg:px-10 lg:pb-10">
         <SiteHeader site={site} categories={menuByCategory} />
         <MenuSection categories={menuByCategory} />
         <FooterInfo site={site} />

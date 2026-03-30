@@ -37,7 +37,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -45,7 +44,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.45;
-  overflow-x: hidden;
   position: relative;
   background:
     radial-gradient(circle at top center, rgba(197, 143, 97, 0.08), transparent 36%),
@@ -76,7 +74,6 @@ img {
 
 #root {
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1,
