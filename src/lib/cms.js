@@ -34,8 +34,7 @@ function normalizeSeo(row = {}, site) {
   return {
     metaTitle: row.meta_title || `${site.siteName} | Дніпро`,
     metaDescription:
-      row.meta_description ||
-      'Преміальний editorial minimal лендинг кавʼярні Blue Date Coffee Shop.',
+      row.meta_description || 'Меню кавʼярні Blue Date',
     ogTitle: row.og_title || row.meta_title || site.siteName,
     ogDescription: row.og_description || row.meta_description || '',
     ogImageUrl: row.og_image_url || '',
